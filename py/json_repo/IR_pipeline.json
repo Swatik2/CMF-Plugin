@@ -1,0 +1,808 @@
+{
+    "count": 8,
+    "lineage": [
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit acbda95996651121188e660163636276c7f17b2a",
+                            "createdAt": 1655655618928,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 1,
+                            "type": "Dataset",
+                            "updatedAt": 1655655618928,
+                            "uri": "b25d5454172ebc11dad24f86e0410ec6"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/NetwokAdapter_issue_resolution.pdf:b25d5454172ebc11dad24f86e0410ec6",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "9da1b17b7ce01a5bd556ba251b4ba64ed1cbb32b",
+                        "process": "ContentCollector"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit 6cda4fbff28c06e98a59b68a2ecda6cf560f5eca"
+                    }
+                },
+                "name": "ContentCollector",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 6cda4fbff28c06e98a59b68a2ecda6cf560f5eca",
+                            "createdAt": 1655655620652,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 2,
+                            "type": "Dataset",
+                            "updatedAt": 1655655620652,
+                            "uri": "9278d2ac794deac5c83e03fe3add0e00"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/text.json:9278d2ac794deac5c83e03fe3add0e00",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 2,
+                        "contextType": "ContentCollector",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 1,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 1
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 6cda4fbff28c06e98a59b68a2ecda6cf560f5eca",
+                            "createdAt": 1655655620652,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 2,
+                            "type": "Dataset",
+                            "updatedAt": 1655655620652,
+                            "uri": "9278d2ac794deac5c83e03fe3add0e00"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/text.json:9278d2ac794deac5c83e03fe3add0e00",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "6cda4fbff28c06e98a59b68a2ecda6cf560f5eca",
+                        "process": "Extract words"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit cb071bfa6174b4d5aa91d932dfe7e79c5917204e"
+                    }
+                },
+                "name": "Extractor",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 5df34922cd8fe48aefb23de75d3420adc1c73ccf",
+                            "createdAt": 1655655622556,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 3,
+                            "type": "Dataset",
+                            "updatedAt": 1655655622556,
+                            "uri": "a6afc9e4d2bf14f54cb61211497b2451"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/keywords.json:a6afc9e4d2bf14f54cb61211497b2451",
+                    "namespace": "IR_pipeline"
+                },
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit cb071bfa6174b4d5aa91d932dfe7e79c5917204e",
+                            "createdAt": 1655655623441,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 4,
+                            "type": "Dataset",
+                            "updatedAt": 1655655623441,
+                            "uri": "4b4fab08641c13a3703afb2e319e72e1"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 3,
+                        "contextType": "Extractor",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 2,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 2
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 5df34922cd8fe48aefb23de75d3420adc1c73ccf",
+                            "createdAt": 1655655622556,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 3,
+                            "type": "Dataset",
+                            "updatedAt": 1655655622556,
+                            "uri": "a6afc9e4d2bf14f54cb61211497b2451"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/keywords.json:a6afc9e4d2bf14f54cb61211497b2451",
+                    "namespace": "IR_pipeline"
+                },
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit cb071bfa6174b4d5aa91d932dfe7e79c5917204e",
+                            "createdAt": 1655655623441,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 4,
+                            "type": "Dataset",
+                            "updatedAt": 1655655623441,
+                            "uri": "4b4fab08641c13a3703afb2e319e72e1"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "cb071bfa6174b4d5aa91d932dfe7e79c5917204e",
+                        "process": "classifier"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit 2dbe8ca93f84d83cdede11fdf4a8d24b448f469b"
+                    }
+                },
+                "name": "classifier",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 2dbe8ca93f84d83cdede11fdf4a8d24b448f469b",
+                            "createdAt": 1655655626216,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 5,
+                            "type": "Dataset",
+                            "updatedAt": 1655655626216,
+                            "uri": "1e279d73d7f4e37fa18bffb59193b08d"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 4,
+                        "contextType": "classifier",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 3,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 3
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 2dbe8ca93f84d83cdede11fdf4a8d24b448f469b",
+                            "createdAt": 1655655626216,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 5,
+                            "type": "Dataset",
+                            "updatedAt": 1655655626216,
+                            "uri": "1e279d73d7f4e37fa18bffb59193b08d"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "2dbe8ca93f84d83cdede11fdf4a8d24b448f469b",
+                        "process": "doc-embedding"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit e5bf6149081ef5ba24d9918ef669717890f9c2e6"
+                    }
+                },
+                "name": "doc-embedding",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit e5bf6149081ef5ba24d9918ef669717890f9c2e6",
+                            "createdAt": 1655655628115,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 6,
+                            "type": "Dataset",
+                            "updatedAt": 1655655628115,
+                            "uri": "fcd5617bf45d37434a0ae8998be69224"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 5,
+                        "contextType": "doc-embedding",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 4,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 4
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 404156569f94bdf5b70f77eb76eb66790199f78a",
+                            "createdAt": 1655655629235,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 7,
+                            "type": "Dataset",
+                            "updatedAt": 1655655629235,
+                            "uri": "dcb4f7d7279b6ece2e4cda5885b1cedf"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/server_sensor_logs.bin:dcb4f7d7279b6ece2e4cda5885b1cedf",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "e5bf6149081ef5ba24d9918ef669717890f9c2e6",
+                        "process": "Decoder"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2"
+                    }
+                },
+                "name": "Decoder",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2",
+                            "createdAt": 1655655630408,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 8,
+                            "type": "Dataset",
+                            "updatedAt": 1655655630408,
+                            "uri": "0195414341ff628711441c4f4ed08a7b"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/server_inventory.json:0195414341ff628711441c4f4ed08a7b",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 6,
+                        "contextType": "Decoder",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 5,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 5
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2",
+                            "createdAt": 1655655630408,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 8,
+                            "type": "Dataset",
+                            "updatedAt": 1655655630408,
+                            "uri": "0195414341ff628711441c4f4ed08a7b"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/server_inventory.json:0195414341ff628711441c4f4ed08a7b",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2",
+                        "process": "filter-inventory"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit 145a9ab75230526d7fe15287274806594581aa49"
+                    }
+                },
+                "name": "filter-inventory",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 145a9ab75230526d7fe15287274806594581aa49",
+                            "createdAt": 1655655632360,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 9,
+                            "type": "Dataset",
+                            "updatedAt": 1655655632360,
+                            "uri": "8ed3b7c0d21495c7f3d411b23103e5ee"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 7,
+                        "contextType": "filter-inventory",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 6,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 6
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit 145a9ab75230526d7fe15287274806594581aa49",
+                            "createdAt": 1655655632360,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 9,
+                            "type": "Dataset",
+                            "updatedAt": 1655655632360,
+                            "uri": "8ed3b7c0d21495c7f3d411b23103e5ee"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "145a9ab75230526d7fe15287274806594581aa49",
+                        "process": "Encoder"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b"
+                    }
+                },
+                "name": "Encoder",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b",
+                            "createdAt": 1655655634234,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 10,
+                            "type": "Dataset",
+                            "updatedAt": 1655655634234,
+                            "uri": "389f6559cf0f0af1a18664a08f05db0e"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 8,
+                        "contextType": "Encoder",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 7,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 7
+            }
+        },
+        {
+            "eventTime": "2005-03-12T18:30:00.0Z",
+            "eventType": "COMPLETE",
+            "inputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b",
+                            "createdAt": 1655655634234,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 10,
+                            "type": "Dataset",
+                            "updatedAt": 1655655634234,
+                            "uri": "389f6559cf0f0af1a18664a08f05db0e"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e",
+                    "namespace": "IR_pipeline"
+                },
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit e5bf6149081ef5ba24d9918ef669717890f9c2e6",
+                            "createdAt": 1655655628115,
+                            "event": "INPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 6,
+                            "type": "Dataset",
+                            "updatedAt": 1655655628115,
+                            "uri": "fcd5617bf45d37434a0ae8998be69224"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "job": {
+                "facets": {
+                    "cmfJobFacets": {
+                        "gitEndCommit": "",
+                        "gitStartCommit": "e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b",
+                        "process": "similiarity"
+                    },
+                    "sourceCodeLocation": {
+                        "type": "git",
+                        "url": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                        "version": "commit d1dc0e755431a848dbb13dafa05bac56c50ec2ea"
+                    }
+                },
+                "name": "similiarity",
+                "namespace": "IR_pipeline"
+            },
+            "outputs": [
+                {
+                    "facets": {
+                        "cmfDataSetFacets": {
+                            "commit": "commit d1dc0e755431a848dbb13dafa05bac56c50ec2ea",
+                            "createdAt": 1655655637053,
+                            "event": "OUTPUT",
+                            "gitRepo": "git@github.hpe.com:arun-mahendran/cmftest.git",
+                            "id": 11,
+                            "type": "Dataset",
+                            "updatedAt": 1655655637053,
+                            "uri": "064e01107f8d88d59c53612e5791da85"
+                        },
+                        "schema": {
+                            "fields": [],
+                            "stringDomain": []
+                        }
+                    },
+                    "name": "./data/issue_resolution.json:064e01107f8d88d59c53612e5791da85",
+                    "namespace": "IR_pipeline"
+                }
+            ],
+            "producer": "producer",
+            "run": {
+                "facets": {
+                    "cmfRunFacets": {
+                        "contextId": 9,
+                        "contextType": "similiarity",
+                        "execution": "['/root/anaconda3/lib/python3.8/site-packages/ipykernel_launcher.py', '-f', '/root/.local/share/jupyter/runtime/kernel-a1695cee-ec65-4a75-b802-d61da1b93b56.json']",
+                        "id": 8,
+                        "pipelineId": 1,
+                        "pipelineType": "IR_pipeline"
+                    }
+                },
+                "runId": 8
+            }
+        }
+    ],
+    "name": "IR_pipeline",
+    "offset": 0,
+    "resources": [
+        {
+            "data": "{\"Commit\":\"commit acbda95996651121188e660163636276c7f17b2a\",\"create_time_since_epoch\":1655655618928,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":1,\"last_update_time_since_epoch\":1655655618928,\"name\":\".\\/data\\/NetwokAdapter_issue_resolution.pdf:b25d5454172ebc11dad24f86e0410ec6\",\"type\":\"Dataset\",\"uri\":\"b25d5454172ebc11dad24f86e0410ec6\"}",
+            "encoding": "utf-8",
+            "execution_id": 1,
+            "name": "./data/NetwokAdapter_issue_resolution.pdf:b25d5454172ebc11dad24f86e0410ec6"
+        },
+        {
+            "data": "{\"Commit\":\"commit 6cda4fbff28c06e98a59b68a2ecda6cf560f5eca\",\"create_time_since_epoch\":1655655620652,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":2,\"last_update_time_since_epoch\":1655655620652,\"name\":\".\\/data\\/text.json:9278d2ac794deac5c83e03fe3add0e00\",\"type\":\"Dataset\",\"uri\":\"9278d2ac794deac5c83e03fe3add0e00\"}",
+            "encoding": "utf-8",
+            "execution_id": 1,
+            "name": "./data/text.json:9278d2ac794deac5c83e03fe3add0e00"
+        },
+        {
+            "data": "{\"Commit\":\"commit 6cda4fbff28c06e98a59b68a2ecda6cf560f5eca\",\"create_time_since_epoch\":1655655620652,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":2,\"last_update_time_since_epoch\":1655655620652,\"name\":\".\\/data\\/text.json:9278d2ac794deac5c83e03fe3add0e00\",\"type\":\"Dataset\",\"uri\":\"9278d2ac794deac5c83e03fe3add0e00\"}",
+            "encoding": "utf-8",
+            "execution_id": 2,
+            "name": "./data/text.json:9278d2ac794deac5c83e03fe3add0e00"
+        },
+        {
+            "data": "{\"Commit\":\"commit 5df34922cd8fe48aefb23de75d3420adc1c73ccf\",\"create_time_since_epoch\":1655655622556,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":3,\"last_update_time_since_epoch\":1655655622556,\"name\":\".\\/data\\/keywords.json:a6afc9e4d2bf14f54cb61211497b2451\",\"type\":\"Dataset\",\"uri\":\"a6afc9e4d2bf14f54cb61211497b2451\"}",
+            "encoding": "utf-8",
+            "execution_id": 2,
+            "name": "./data/keywords.json:a6afc9e4d2bf14f54cb61211497b2451"
+        },
+        {
+            "data": "{\"Commit\":\"commit cb071bfa6174b4d5aa91d932dfe7e79c5917204e\",\"create_time_since_epoch\":1655655623441,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":4,\"last_update_time_since_epoch\":1655655623441,\"name\":\".\\/data\\/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1\",\"type\":\"Dataset\",\"uri\":\"4b4fab08641c13a3703afb2e319e72e1\"}",
+            "encoding": "utf-8",
+            "execution_id": 2,
+            "name": "./data/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1"
+        },
+        {
+            "data": "{\"Commit\":\"commit 5df34922cd8fe48aefb23de75d3420adc1c73ccf\",\"create_time_since_epoch\":1655655622556,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":3,\"last_update_time_since_epoch\":1655655622556,\"name\":\".\\/data\\/keywords.json:a6afc9e4d2bf14f54cb61211497b2451\",\"type\":\"Dataset\",\"uri\":\"a6afc9e4d2bf14f54cb61211497b2451\"}",
+            "encoding": "utf-8",
+            "execution_id": 3,
+            "name": "./data/keywords.json:a6afc9e4d2bf14f54cb61211497b2451"
+        },
+        {
+            "data": "{\"Commit\":\"commit cb071bfa6174b4d5aa91d932dfe7e79c5917204e\",\"create_time_since_epoch\":1655655623441,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":4,\"last_update_time_since_epoch\":1655655623441,\"name\":\".\\/data\\/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1\",\"type\":\"Dataset\",\"uri\":\"4b4fab08641c13a3703afb2e319e72e1\"}",
+            "encoding": "utf-8",
+            "execution_id": 3,
+            "name": "./data/preavailable_keywords.json:4b4fab08641c13a3703afb2e319e72e1"
+        },
+        {
+            "data": "{\"Commit\":\"commit 2dbe8ca93f84d83cdede11fdf4a8d24b448f469b\",\"create_time_since_epoch\":1655655626216,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":5,\"last_update_time_since_epoch\":1655655626216,\"name\":\".\\/data\\/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d\",\"type\":\"Dataset\",\"uri\":\"1e279d73d7f4e37fa18bffb59193b08d\"}",
+            "encoding": "utf-8",
+            "execution_id": 3,
+            "name": "./data/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d"
+        },
+        {
+            "data": "{\"Commit\":\"commit 2dbe8ca93f84d83cdede11fdf4a8d24b448f469b\",\"create_time_since_epoch\":1655655626216,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":5,\"last_update_time_since_epoch\":1655655626216,\"name\":\".\\/data\\/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d\",\"type\":\"Dataset\",\"uri\":\"1e279d73d7f4e37fa18bffb59193b08d\"}",
+            "encoding": "utf-8",
+            "execution_id": 4,
+            "name": "./data/classified_keyword.json:1e279d73d7f4e37fa18bffb59193b08d"
+        },
+        {
+            "data": "{\"Commit\":\"commit e5bf6149081ef5ba24d9918ef669717890f9c2e6\",\"create_time_since_epoch\":1655655628115,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":6,\"last_update_time_since_epoch\":1655655628115,\"name\":\".\\/data\\/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224\",\"type\":\"Dataset\",\"uri\":\"fcd5617bf45d37434a0ae8998be69224\"}",
+            "encoding": "utf-8",
+            "execution_id": 4,
+            "name": "./data/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224"
+        },
+        {
+            "data": "{\"Commit\":\"commit 404156569f94bdf5b70f77eb76eb66790199f78a\",\"create_time_since_epoch\":1655655629235,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":7,\"last_update_time_since_epoch\":1655655629235,\"name\":\".\\/data\\/server_sensor_logs.bin:dcb4f7d7279b6ece2e4cda5885b1cedf\",\"type\":\"Dataset\",\"uri\":\"dcb4f7d7279b6ece2e4cda5885b1cedf\"}",
+            "encoding": "utf-8",
+            "execution_id": 5,
+            "name": "./data/server_sensor_logs.bin:dcb4f7d7279b6ece2e4cda5885b1cedf"
+        },
+        {
+            "data": "{\"Commit\":\"commit a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2\",\"create_time_since_epoch\":1655655630408,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":8,\"last_update_time_since_epoch\":1655655630408,\"name\":\".\\/data\\/server_inventory.json:0195414341ff628711441c4f4ed08a7b\",\"type\":\"Dataset\",\"uri\":\"0195414341ff628711441c4f4ed08a7b\"}",
+            "encoding": "utf-8",
+            "execution_id": 5,
+            "name": "./data/server_inventory.json:0195414341ff628711441c4f4ed08a7b"
+        },
+        {
+            "data": "{\"Commit\":\"commit a739e2f2f19fa9666a98f90c0ecc3cc81d9f68e2\",\"create_time_since_epoch\":1655655630408,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":8,\"last_update_time_since_epoch\":1655655630408,\"name\":\".\\/data\\/server_inventory.json:0195414341ff628711441c4f4ed08a7b\",\"type\":\"Dataset\",\"uri\":\"0195414341ff628711441c4f4ed08a7b\"}",
+            "encoding": "utf-8",
+            "execution_id": 6,
+            "name": "./data/server_inventory.json:0195414341ff628711441c4f4ed08a7b"
+        },
+        {
+            "data": "{\"Commit\":\"commit 145a9ab75230526d7fe15287274806594581aa49\",\"create_time_since_epoch\":1655655632360,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":9,\"last_update_time_since_epoch\":1655655632360,\"name\":\".\\/data\\/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee\",\"type\":\"Dataset\",\"uri\":\"8ed3b7c0d21495c7f3d411b23103e5ee\"}",
+            "encoding": "utf-8",
+            "execution_id": 6,
+            "name": "./data/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee"
+        },
+        {
+            "data": "{\"Commit\":\"commit 145a9ab75230526d7fe15287274806594581aa49\",\"create_time_since_epoch\":1655655632360,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":9,\"last_update_time_since_epoch\":1655655632360,\"name\":\".\\/data\\/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee\",\"type\":\"Dataset\",\"uri\":\"8ed3b7c0d21495c7f3d411b23103e5ee\"}",
+            "encoding": "utf-8",
+            "execution_id": 7,
+            "name": "./data/inventory_filtered.json:8ed3b7c0d21495c7f3d411b23103e5ee"
+        },
+        {
+            "data": "{\"Commit\":\"commit e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b\",\"create_time_since_epoch\":1655655634234,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":10,\"last_update_time_since_epoch\":1655655634234,\"name\":\".\\/data\\/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e\",\"type\":\"Dataset\",\"uri\":\"389f6559cf0f0af1a18664a08f05db0e\"}",
+            "encoding": "utf-8",
+            "execution_id": 7,
+            "name": "./data/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e"
+        },
+        {
+            "data": "{\"Commit\":\"commit e44706b53e6d91bf3ce43225cd7a9b70bc7c4f0b\",\"create_time_since_epoch\":1655655634234,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":10,\"last_update_time_since_epoch\":1655655634234,\"name\":\".\\/data\\/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e\",\"type\":\"Dataset\",\"uri\":\"389f6559cf0f0af1a18664a08f05db0e\"}",
+            "encoding": "utf-8",
+            "execution_id": 8,
+            "name": "./data/inventory_embedding.json:389f6559cf0f0af1a18664a08f05db0e"
+        },
+        {
+            "data": "{\"Commit\":\"commit e5bf6149081ef5ba24d9918ef669717890f9c2e6\",\"create_time_since_epoch\":1655655628115,\"event\":\"INPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":6,\"last_update_time_since_epoch\":1655655628115,\"name\":\".\\/data\\/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224\",\"type\":\"Dataset\",\"uri\":\"fcd5617bf45d37434a0ae8998be69224\"}",
+            "encoding": "utf-8",
+            "execution_id": 8,
+            "name": "./data/doc_embedding.json:fcd5617bf45d37434a0ae8998be69224"
+        },
+        {
+            "data": "{\"Commit\":\"commit d1dc0e755431a848dbb13dafa05bac56c50ec2ea\",\"create_time_since_epoch\":1655655637053,\"event\":\"OUTPUT\",\"git_repo\":\"git@github.hpe.com:arun-mahendran\\/cmftest.git\",\"id\":11,\"last_update_time_since_epoch\":1655655637053,\"name\":\".\\/data\\/issue_resolution.json:064e01107f8d88d59c53612e5791da85\",\"type\":\"Dataset\",\"uri\":\"064e01107f8d88d59c53612e5791da85\"}",
+            "encoding": "utf-8",
+            "execution_id": 8,
+            "name": "./data/issue_resolution.json:064e01107f8d88d59c53612e5791da85"
+        }
+    ],
+    "total": 8
+}
